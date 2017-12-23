@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:text="请选择楼层"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/select_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_prompt"
+            android:layout_alignBottom="@+id/tv_prompt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:button="@drawable/check_box_login_selector"
+            android:text="全选"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_linerr"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="45dp"
+            android:background="#e1e1e1" />
+
+        <GridView
+            android:id="@+id/gridview_floor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/view_linerr"
+            android:layout_marginTop="20dp"
+            android:numColumns="3" />
+
+        <View
+            android:id="@+id/view_linerrs"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/bt_OK"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:background="#e1e1e1" />
+
+        <Button
+            android:id="@+id/bt_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>
